@@ -1,3 +1,4 @@
+/* Styles for the entire page */
 body {
     display: flex;
     justify-content: center;
@@ -8,12 +9,14 @@ body {
     background-size: cover;
 }
 
+/* Styles for the clock container */
 .clock {
     position: relative;
     width: 80vmin;
     height: 80vmin;
 }
 
+/* Styles for the outer circle of the clock face */
 .outer-clock-face {
     position: absolute;
     width: 100%;
@@ -22,6 +25,7 @@ body {
     border-radius: 50%;
 }
 
+/* Styles for clock markings (hour indicators) */
 .marking {
     position: absolute;
     background: #fffefe;
@@ -33,6 +37,7 @@ body {
     z-index: 1;
 }
 
+/* Specific styles for individual markings */
 .marking-one {
     top: 95%;
 }
@@ -51,6 +56,7 @@ body {
     transform: rotate(270deg);
 }
 
+/* Styles for the inner circle of the clock face */
 .inner-clock-face {
     position: absolute;
     width: 100%;
@@ -64,36 +70,37 @@ body {
     z-index: 0;
 }
 
+/* Styles for clock hands (hour, minute, and second hands) */
 .hand {
     position: absolute;
     background: #fffcfc;
     transform-origin: 50% 100%;
 }
 
+/* Styles for the hour hand */
 .hour-hand {
     width: 4vmin;
     height: 50%;
-    /*weiss nöd bro da isch vorher 50 % gsi*/
     top: 0%;
     left: 50%;
     transform: translate(-50%, -100%);
 }
 
+/* Styles for the minute hand */
 .min-hand {
     background: #fffcfc;
     width: 1.6vmin;
     height: 50%;
-    /*Da isch au 50% gsi*/
     top: 0%;
     left: 50%;
     transform: translate(-50%, -100%);
 }
 
+/* Styles for the second hand */
 .second-hand {
     background: blue;
     width: 1vmin;
     height: 50%;
-    /*Au 50 % gsi*/
     top: 0%;
     left: 50%;
     transform: translate(-50%, -100%);
